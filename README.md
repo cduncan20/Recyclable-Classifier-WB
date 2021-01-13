@@ -45,18 +45,21 @@ $ poetry run python main.py -h
 The generated menu of options will help guide the user through using any of the pre-built tools.  
 ```
 $ poetry run python main.py -h
-usage: main.py [-h] [-a] [-s] [-e] [--train]
+Usage: main.py [argument]
 
-optional arguments:
-  -h, --help          show this help message and exit
-  -a, --augment-data  Allows user to choose augmentations (flip horizontally,
-                      flip vertically, rotate, etc.)performed on training data
-  -s, --split-data    Allows user to choose how to split Training, Validation,
-                      & Test data
-  -e, --epoch-qty     Allows user to choose the number of epochs for training
-                      the selected model
-  --train             Trains the chosen model to classify dataset (defined in
-                      load_data.py)
+Optional Arguments:
+-h, --help 			 Show this help message and exit
+--train_ratio=[float] 		 Training ratio for splitting data. Chosen value should be a float < 1.00.
+--batch_size=[int] 		 Batch size for training data. Chosen value should be an integer < 50.
+--learn_rate=[float] 		 Learning rate for training model. Chosen value should be a float.
+--epoch_qty=[int] 		 Epoch Quantity for training model. Chosen value should be an integer.
+--transform_horz=[bool] 	 Horizontal Augmentation for training data. Chosen value should be True or False.
+--transform_vert=[bool] 	 Vertical Augmentation for training data. Chosen value should be True or False.
+--transform_rot30=[bool] 	 30 Degree Rotation Augmentation for training data. Chosen value should be True or False.
+--transform_noise=[bool] 	 Noise Augmentation for training data. Chosen value should be True or False.
+--transform_blur=[bool] 	 Blur Augmentation for training data. Chosen value should be True or False.
+--architecture=[string] 	 Pre-Trained model type for leveraging transfer learning. Chosen value should be 'resnet18', 'resnet34', 'resnet50', or 'resnet50-modnet'.
+
 ```
 
 By executing with the `--train` flag the user will be prompted to select any model architecture currently implemented, which include the following:
