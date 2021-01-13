@@ -49,8 +49,6 @@ Usage: main.py [argument]
 
 Optional Arguments:
 -h, --help 			 Show this help message and exit
-Optional Arguments:
--h, --help 			 Show this help message and exit
 --train_ratio=[float] 		 Training ratio for splitting data. Chosen value should be a float < 1.00. Default value is 0.6.
 --batch_size=[int] 		 Batch size for training data. Chosen value should be an integer < 50. Default value is 8.
 --learn_rate=[float] 		 Learning rate for training model. Chosen value should be a float. Default value is 0.001.
