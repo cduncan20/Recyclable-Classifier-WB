@@ -64,8 +64,6 @@ By executing with the `--train` flag the user will be prompted to select any mod
 - ResNet34
 - ResNet50
 - ResNet50-modnet
-- ResNeXt101
-- ResNext101-modnet
 
 Note that none of these CLI options require additional arguments. Simply pass with the appropriate flag to initialize an
 interface that will guide you through changing the settings. Please reference the .pdf file titled **RecyclableClassifier_FinalReport_DuncanThune** for more information on the currently implemented model architectures and functionality of the optional arguments.
