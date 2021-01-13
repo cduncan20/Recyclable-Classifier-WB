@@ -1,0 +1,44 @@
+program: main_wandb.py
+method: bayes
+metric:
+  name: Test Accuracy
+  goal: maximize
+  target: 90.0
+parameters:
+  epoch_qty:
+    distribution: int_uniform
+    max: 25
+    min: 5
+  learn_rate:
+    distribution: uniform
+    max: 0.001
+    min: 0.0001
+  train_ratio:
+    distribution: uniform
+    max: 0.8
+    min: 0.6
+  transform_blur:
+    distribution: categorical
+    values:
+    - "true"
+    - "false"
+  transform_horz:
+    distribution: categorical
+    values:
+    - "true"
+    - "false"
+  transform_noise:
+    distribution: categorical
+    values:
+    - "true"
+    - "false"
+  transform_rot30:
+    distribution: categorical
+    values:
+    - "true"
+    - "false"
+  transform_vert:
+    distribution: categorical
+    values:
+    - "true"
+    - "false"
