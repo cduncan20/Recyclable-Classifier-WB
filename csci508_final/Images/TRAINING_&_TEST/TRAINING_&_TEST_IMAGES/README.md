@@ -1,7 +1,11 @@
-Author: Casey Duncan
-Date: 3/17/2020
-Class: CSCI 508 Final
-File Location: ~/csci508-final/csci508_final/Images/TRAINING_&_TEST/TRAINING_&_TEST_IMAGES
+<h1>Dataset Directory</h1>
 
-# OVERVIEW
-Here lies all of the TRAINING_&_TEST_IMAGES within their corresponding labeled folder. For example, if there are a bunch of photos showing only glass objects, all of these images should be placed into their own folder named 'glass' which corresponds to the class 'glass'. Equivalently for photos showing only paper, metal, plastic, etc. In the future, there will be a .zip file where you can export all images within their corresponding labeled folders into this 'TRAINING_&_TEST_IMAGES' folder.
+**Name:** Casey Duncan <br />
+**Date:** 04/27/2020 <br />
+**Course:** CSCI 508 - Advance Computer Vision <br />
+**Directory Location:** ~/csci508-final/csci508_final/Images/TRAINING\_&\_TEST/TRAINING\_&\_TEST\_IMAGES
+
+<h2>OVERVIEW</h2>
+
+Within this directory is the folders containing all of the raw data images that the folder will use for training, validation and testing. See README.md within the following location for more information: <br />
+~/csci508-final/Images
