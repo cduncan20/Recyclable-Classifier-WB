@@ -49,24 +49,23 @@ Usage: main.py [argument]
 
 Optional Arguments:
 -h, --help 			 Show this help message and exit
---train_ratio=[float] 		 Training ratio for splitting data. Chosen value should be a float < 1.00.
---batch_size=[int] 		 Batch size for training data. Chosen value should be an integer < 50.
---learn_rate=[float] 		 Learning rate for training model. Chosen value should be a float.
---epoch_qty=[int] 		 Epoch Quantity for training model. Chosen value should be an integer.
---transform_horz=[bool] 	 Horizontal Augmentation for training data. Chosen value should be True or False.
---transform_vert=[bool] 	 Vertical Augmentation for training data. Chosen value should be True or False.
---transform_rot30=[bool] 	 30 Degree Rotation Augmentation for training data. Chosen value should be True or False.
---transform_noise=[bool] 	 Noise Augmentation for training data. Chosen value should be True or False.
---transform_blur=[bool] 	 Blur Augmentation for training data. Chosen value should be True or False.
---architecture=[string] 	 Pre-Trained model type for leveraging transfer learning. Chosen value should be 'resnet18', 'resnet34', 'resnet50', or 'resnet50-modnet'.
+Optional Arguments:
+-h, --help 			           Show this help message and exit
+--train_ratio=[float] 		 Training ratio for splitting data. Chosen value should be a float < 1.00. Default value is 0.6.
+--batch_size=[int] 		     Batch size for training data. Chosen value should be an integer < 50. Default value is 8.
+--learn_rate=[float] 		   Learning rate for training model. Chosen value should be a float. Default value is 0.001.
+--epoch_qty=[int] 		     Epoch Quantity for training model. Chosen value should be an integer. Default value is 8.
+--transform_horz=[bool] 	 Horizontal Augmentation for training data. Chosen value should be True or False. Default value is False.
+--transform_vert=[bool] 	 Vertical Augmentation for training data. Chosen value should be True or False. Default value is False.
+--transform_rot30=[bool] 	 30 Degree Rotation Augmentation for training data. Chosen value should be True or False. Default value is False.
+--transform_noise=[bool] 	 Noise Augmentation for training data. Chosen value should be True or False. Default value is False.
+--transform_blur=[bool] 	 Blur Augmentation for training data. Chosen value should be True or False. Default value is False.
+--architecture=[string] 	 Pre-Trained model type for leveraging transfer learning. Chosen value should be 'resnet18', 'resnet34', 'resnet50', or 'resnet50-        modnet'. Default value is 'resnet18'.
+
 
 ```
 
-By executing with the `--train` flag the user will be prompted to select any model architecture currently implemented, which include the following:
-- ResNet18
-- ResNet34
-- ResNet50
-- ResNet50-modnet
+By executing with the `poetry run python main.py` command, the user will train a model using the default argument values.
 
 Note that none of these CLI options require additional arguments. Simply pass with the appropriate flag to initialize an
 interface that will guide you through changing the settings. Please reference the .pdf file titled **RecyclableClassifier_FinalReport_DuncanThune** for more information on the currently implemented model architectures and functionality of the optional arguments.
