@@ -37,7 +37,28 @@ def main(argv):
         sys.exit(2)
 
     for current_argument, current_value in arguments:
-        if current_argument in ("--train_ratio"):
+        if current_argument in ("-h", "--help"):
+            print()
+            print("Usage: main.py [argument]")
+            print()
+            print("Optional Arguments:")
+            print("-h, --help \t\t\t Show this help message and exit")
+            print("--train_ratio=[float] \t\t Training ratio for splitting data. Chosen value should be a float < 1.00. Default value is 0.6.")
+            print("--batch_size=[int] \t\t Batch size for training data. Chosen value should be an integer < 50. Default value is 8.")
+            print("--learn_rate=[float] \t\t Learning rate for training model. Chosen value should be a float. Default value is 0.001.")
+            print("--epoch_qty=[int] \t\t Epoch Quantity for training model. Chosen value should be an integer. Default value is 8.")
+            print("--transform_horz=[bool] \t Horizontal Augmentation for training data. Chosen value should be "
+                  "True or False. Default value is False.")
+            print("--transform_vert=[bool] \t Vertical Augmentation for training data. Chosen value should be "
+                   "True or False. Default value is False.")
+            print("--transform_rot30=[bool] \t 30 Degree Rotation Augmentation for training data. Chosen value should be True or False. Default value is False.")
+            print("--transform_noise=[bool] \t Noise Augmentation for training data. Chosen value should be True or False. Default value is False.")
+            print("--transform_blur=[bool] \t Blur Augmentation for training data. Chosen value should be True or False. Default value is False.")
+            print("--architecture=[string] \t Pre-Trained model type for leveraging transfer learning. Chosen value should be")
+            print("\t\t\t\t 'resnet18', 'resnet34', 'resnet50', or 'resnet50-modnet'. Default value is 'resnet18'.")
+            print()
+            exit()
+        elif current_argument in ("--train_ratio"):
             train_ratio = float(current_value)
         elif current_argument in ("--epoch_qty"):
             epoch_qty = int(current_value)
