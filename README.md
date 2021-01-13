@@ -60,7 +60,7 @@ Optional Arguments:
 --transform_rot30=[bool] 	 30 Degree Rotation Augmentation for training data. Chosen value should be True or False. Default value is False.
 --transform_noise=[bool] 	 Noise Augmentation for training data. Chosen value should be True or False. Default value is False.
 --transform_blur=[bool] 	 Blur Augmentation for training data. Chosen value should be True or False. Default value is False.
---architecture=[string] 	 Pre-Trained model type for leveraging transfer learning. Chosen value should be 'resnet18', 'resnet34', 'resnet50', or 'resnet50-        modnet'. Default value is 'resnet18'.
+--architecture=[string] 	 Pre-Trained model type for leveraging transfer learning. Chosen value should be 'resnet18', 'resnet34', 'resnet50', or 'resnet50-modnet'. Default value is 'resnet18'.
 
 
 ```
