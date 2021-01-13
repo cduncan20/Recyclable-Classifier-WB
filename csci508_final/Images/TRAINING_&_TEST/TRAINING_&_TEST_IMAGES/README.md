@@ -7,5 +7,5 @@
 
 <h2>OVERVIEW</h2>
 
-Within this directory is the folders containing all of the raw data images that the folder will use for training, validation and testing. See README.md within the following location for more information:
+Within this directory is the folders containing all of the raw data images that the folder will use for training, validation and testing. See README.md within the following location for more information: <br />
 ~/csci508-final/Images
